@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron&family=Poppins:wght@100&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    font-size: 65px;
+    font-family: Orbitron;
+    background-image: url(imagens/pexels-pixabay-302769.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(51, 51, 51);
+}
+
+.relogio {
+    padding-top: auto;
+    padding-bottom: auto;
+    box-sizing: border-box;
+    width: 380px;
+    height: 90px;
+    background-color: rgba(156, 156, 156, 0.411);
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 20px;
+    position: absolute;
+    right: 770px;
+    top: 300px;
+}
+
+#titulo {
+    font-family: Bebas Neue;
+    font-size: 80px;
+    color: rgb(75, 75, 75);
+}
