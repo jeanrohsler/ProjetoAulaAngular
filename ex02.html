@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    Digite um número: <input type="number" id="numero">
+    <button onclick="verificar()">Verificar</button> <br> <br>
+    <span></span>
+    <script>
+        function verificar() {
+            let numero = parseInt(document.getElementById("numero").value);
+            let imprimir = document.querySelector("span");
+            if (numero % 2 == 0) {
+                imprimir.textContent = ("O número é par");
+            } else {
+                imprimir.textContent = ("O número é impar");
+            }
+        }
+    </script>
+</body>
+</html>

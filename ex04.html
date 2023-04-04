@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício 04</title>
+  </head>
+  <body>
+    <p>Digite os números da lista separados por vírgula:</p>
+    <input type="text" id="lista">
+    <button onclick="encontrarMaiorNumero()">Encontrar o maior número</button>
+    <p id="resultado"></p>
+
+    <script>
+      function encontrarMaiorNumero() {
+        const lista = document.getElementById("lista");
+        const listaNumerica = lista.value.split(",").map(Number);
+        const maiorNumero = Math.max(...listaNumerica);
+        const resultado = document.getElementById("resultado");
+        resultado.textContent = `O maior número é ${maiorNumero}.`;
+      }
+    </script>
+  </body>
+</html>

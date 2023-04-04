@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contar o número de ocorrências de um elemento em uma lista</title>
+  </head>
+  <body>
+    <p>Digite os números da lista separados por vírgula:</p>
+    <input type="text" id="inputListaNumerica">
+    <p>Digite o número que deseja contar as ocorrências:</p>
+    <input type="text" id="inputNumero">
+    <button onclick="contarOcorrencias()">Contar ocorrências</button>
+    <p id="resultado"></p>
+
+    <script>
+      function contarOcorrencias() {
+        const inputListaNumerica = document.getElementById("inputListaNumerica");
+        const listaNumerica = inputListaNumerica.value.split(",").map(Number);
+        const inputNumero = document.getElementById("inputNumero");
+        const numero = Number(inputNumero.value);
+        const contador = listaNumerica.reduce((acc, curr) => acc + (curr === numero), 0);
+        const resultado = document.getElementById("resultado");
+        resultado.textContent = `O número ${numero} aparece ${contador} vezes na lista.`;
+      }
+    </script>
+  </body>
+</html>
